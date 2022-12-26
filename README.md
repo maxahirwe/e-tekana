@@ -1,16 +1,21 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-# TEKANA-EWALLET
+# TEKANA E-WALLET
 
 ## Features breakdown
 
     - User Registration
     - Wallets
+      - Multiple Wallets & Currency Support
     - Transaction
 
 ## Architecture
 
 - [ERD](https://dbdiagram.io/d/63a9ad957d39e42284e79027)
+- Technologies
+  - NodeJS, Express Framework
+  - Sequelize, Sqlite
+- [END-POINTS DOCUMENTATION (POSTMAN)](https://universal-capsule-39502.postman.co/workspace/5975be7f-a315-4934-bca2-1c2b1e9ea2cc/collection/16879881-25cb84be-ecd5-4663-9d01-76cde98e1b1e?action=share&creator=16879881)
 
 ## Setup
 
@@ -54,8 +59,9 @@
 
 ## Documentation
 
-- [ERD.png](/documentation/erd.png)
+- ![ERD.png](/documentation/erd.png)
 - [strategy.pdf](/documentation/strategy.pdf)
+- [sample sqlite db](/documentation/e-tekana.sqlite)
 
 ## Author
 

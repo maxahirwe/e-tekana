@@ -19,8 +19,7 @@ class WalletValidation {
       currency: Joi.string()
         .trim()
         .valid(...CURRENCIES)
-        .default(CURRENCIES[0])
-        .optional(),
+        .required(),
     });
     return schema.validate(body, { abortEarly: false });
   }
