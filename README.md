@@ -60,6 +60,8 @@
 ## Documentation
 
 - ![ERD.png](/documentation/erd.png)
+- ![strategy-page 1](/documentation/strategy-page1.jpg)
+- ![strategy-page 2](/documentation/strategy-page2.jpg)
 - [strategy.pdf](/documentation/strategy.pdf)
 - [sample sqlite db](/documentation/e-tekana.sqlite)
 
