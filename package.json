@@ -1,0 +1,69 @@
+{
+  "name": "e-tekana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "export NODE_ENV=development && nodemon --exec babel-node src/server.js",
+    "migrate:up": "npx sequelize-cli db:migrate",
+    "seed:up": "npx sequelize-cli db:seed:all",
+    "migrate:drop": "npx sequelize-cli db:migrate:undo:all",
+    "pretest": "npm run migrate:drop && npm run migrate:up && npm run seed:up",
+    "build": "babel src/ -d dist/",
+    "process": "pm2 start dist/server.js",
+    "stop:process": "pm2 stop --silent project-name || :",
+    "start:process": "pm2 start dist/server.js --name project-name",
+    "start": "npm i && npm run build && npm run stop:process && npm run start:process"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxahirwe/e-tekana.git.git"
+  },
+  "author": "Max Ahirwe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxahirwe/e-tekana.git/issues"
+  },
+  "homepage": "https://github.com/maxahirwe/e-tekana.git#readme",
+  "dependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/register": "^7.13.16",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "http-status": "^1.5.0",
+    "joi": "^17.4.0",
+    "joi-phone-number": "^5.1.1",
+    "jsonwebtoken": "^9.0.0",
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.6.3",
+    "sequelize": "^6.28.0",
+    "sqlite3": "^5.1.4",
+    "swagger-jsdoc": "^6.0.1",
+    "swagger-ui-express": "^4.1.6",
+    "tedious": "^9.2.2",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.7.1",
+    "winston-transport": "^4.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.0",
+    "sequelize-cli": "^6.2.0"
+  }
+}
