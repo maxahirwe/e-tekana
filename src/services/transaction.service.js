@@ -14,7 +14,7 @@ const includeDestinationWallet = {
 };
 
 /**
- * Class that provides Transaction serviceS
+ * Class that provides Transaction services
  */
 class TransactionService {
   /**
@@ -34,7 +34,7 @@ class TransactionService {
         },
       );
       if (!originWallet) {
-        throw new Error('Error getting originWallet');
+        throw new Error('Error fetching origin Wallet');
       }
 
       // check transaction destination wallet
@@ -46,10 +46,10 @@ class TransactionService {
       );
 
       if (!destinationWallet) {
-        throw new Error('Error getting destWallet');
+        throw new Error('Error fetching destination Wallet');
       }
 
-      // make sure all wallets have same currency
+      // make sure all wallets involved in a transaction have same currency
       if (originWallet.currency !== destinationWallet.currency) {
         throw new Error(
           `originWallet currency (${originWallet.currency}) must be the same as destinationWallet currency (${destinationWallet.currency})`,
@@ -87,7 +87,7 @@ class TransactionService {
         },
       );
 
-      // update origin wallet balance
+      // update destination wallet balance
       await Wallet.update(
         { balance: newDestinationBalance },
         {

@@ -1,19 +1,13 @@
 {
   "name": "e-tekana",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "e-wallet back-end service",
   "main": "index.js",
   "scripts": {
     "dev:server": "export NODE_ENV=development && nodemon --exec babel-node src/server.js",
     "migrate:up": "npx sequelize-cli db:migrate",
     "seed:up": "npx sequelize-cli db:seed:all",
-    "migrate:drop": "npx sequelize-cli db:migrate:undo:all",
-    "pretest": "npm run migrate:drop && npm run migrate:up && npm run seed:up",
-    "build": "babel src/ -d dist/",
-    "process": "pm2 start dist/server.js",
-    "stop:process": "pm2 stop --silent project-name || :",
-    "start:process": "pm2 start dist/server.js --name project-name",
-    "start": "npm i && npm run build && npm run stop:process && npm run start:process"
+    "migrate:drop": "npx sequelize-cli db:migrate:undo:all"
   },
   "repository": {
     "type": "git",

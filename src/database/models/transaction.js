@@ -29,10 +29,10 @@ module.exports = (sequelize, DataTypes) => {
       refNumber: DataTypes.STRING,
       originWalletId: DataTypes.INTEGER,
       destinationWalletId: DataTypes.INTEGER,
-      currency: DataTypes.ENUM(CURRENCIES),
-      amount: DataTypes.DECIMAL(20, 5),
       transactionTimeStamp: DataTypes.DECIMAL(20, 5),
       status: DataTypes.ENUM(TRANSACTIONS_STATUSES),
+      currency: DataTypes.ENUM(CURRENCIES),
+      amount: DataTypes.DECIMAL(20, 5),
     },
     {
       sequelize,
