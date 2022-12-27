@@ -7,7 +7,7 @@ class Utils {
    * @returns {Strin} Registered User
    */
   static generateTransactionRefNumber() {
-    return `E-TKN${new Date().getTime()}`;
+    return `E-TKN${new Date().getTime()}${process.hrtime()[1]}`;
   }
 }
 
