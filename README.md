@@ -45,8 +45,8 @@
 - cd in project root folder, create db, install dependencies and run project
 
   ```
-    - npm run dev:db-setup
     - npm install
+    - npm run dev:db-setup
     - npm run dev:server
   ```
 
