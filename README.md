@@ -22,12 +22,12 @@
 ## Setup
 
 - Install latest node version https://nodejs.org/en/download/ (Used v16.0.0+)
-- In root folder create a `.env` file with the following details/credentials
+- In root folder create a `.env` file 
 
 ```
     cp .env.example .env 
 ```
- Or Manually Create it
+ Or Manually Create it with the following details/credentials
  
 ```
     DATABASE_NAME=./e-tekana.sqlite
