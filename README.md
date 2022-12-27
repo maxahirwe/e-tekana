@@ -13,8 +13,10 @@
 
 - [ERD](https://dbdiagram.io/d/63a9ad957d39e42284e79027)
 - Technologies
-  - NodeJS, Express Framework
-  - Sequelize, Sqlite
+  - Server: NodeJS, Express Framework
+  - Database: Sequelize, Sqlite
+  - Style: REST architectural style
+- [END-POINTS DOCUMENTATION PUBLISHED](https://documenter.getpostman.com/view/16879881/2s8Z6x1svV)
 - [END-POINTS DOCUMENTATION (POSTMAN)](https://universal-capsule-39502.postman.co/workspace/5975be7f-a315-4934-bca2-1c2b1e9ea2cc/collection/16879881-25cb84be-ecd5-4663-9d01-76cde98e1b1e?action=share&creator=16879881)
 
 ## Setup
@@ -40,12 +42,20 @@
     FRONT_END_BASE_URL=
 ```
 
-- cd in project root folder, install dependencies and run project
+- cd in project root folder, create db, install dependencies and run project
 
   ```
-    - npx sequelize db:migrate
+    - npm run dev:db-setup
     - npm install
     - npm run dev:server
+  ```
+
+- for testing/development purpose the following user is seeded into the db
+
+  ```
+     email: 'user@sample.rw',
+     phone: '+250788536943',
+     passowrd: test12345
   ```
 
 - The project contains an architectural approach to the whole intended core system (models, basic logic).
