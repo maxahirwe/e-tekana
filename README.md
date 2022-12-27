@@ -25,6 +25,11 @@
 - In root folder create a `.env` file with the following details/credentials
 
 ```
+    cp .env.example .env 
+```
+ Or Manually Create it
+ 
+```
     DATABASE_NAME=./e-tekana.sqlite
     DB_USERNAME=sample
     DB_PASSWORD=sample
@@ -43,10 +48,6 @@
 ```
 
 - cd in project root folder, install dependencies, create & seed db and run server
- 
- ```
-    cp .env.example .env 
-  ```
   
   ```
     npm install
