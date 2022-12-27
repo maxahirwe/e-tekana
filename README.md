@@ -19,15 +19,6 @@
 - [END-POINTS DOCUMENTATION PUBLISHED](https://documenter.getpostman.com/view/16879881/2s8Z6x1svV)
 - [END-POINTS DOCUMENTATION (POSTMAN)](https://universal-capsule-39502.postman.co/workspace/5975be7f-a315-4934-bca2-1c2b1e9ea2cc/collection/16879881-25cb84be-ecd5-4663-9d01-76cde98e1b1e?action=share&creator=16879881)
 
-### Sample User Journey
-
-1. User Signup => **POST** _http://localhost:3000/api/auth/register_
-2. User Confirm Account => **POST** _http://localhost:3000/api/auth/confirm_
-3. User Create Wallet => **POST** _http://localhost:3000/api/wallet/create_
-4. User Get Wallets => **GET** _http://localhost:3000/api/wallet/_
-5. User Create Transaction => **POST** _http://localhost:3000/api/transaction/create_
-6. Uset Get Transactions => **POST** _http://localhost:3000/api/transaction/_
-
 ## Setup
 
 - Install latest node version https://nodejs.org/en/download/ (Used v16.0.0+)
@@ -75,6 +66,15 @@
     - User
     - Wallets
     - Transactions
+
+### Sample User Journey
+
+    1. User Signup => **POST** _http://localhost:3000/api/auth/register_
+    2. User Confirm Account => **POST** _http://localhost:3000/api/auth/confirm_
+    3. User Create Wallet => **POST** _http://localhost:3000/api/wallet/create_
+    4. User Get Wallets => **GET** _http://localhost:3000/api/wallet/_
+    5. User Create Transaction => **POST** _http://localhost:3000/api/transaction/create_
+    6. Uset Get Transactions => **POST** _http://localhost:3000/api/transaction/_
 
 ## Documentation
 
