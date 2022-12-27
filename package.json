@@ -1,6 +1,6 @@
 {
   "name": "e-tekana",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "e-wallet back-end service",
   "main": "index.js",
   "scripts": {
@@ -22,12 +22,6 @@
   },
   "homepage": "https://github.com/maxahirwe/e-tekana.git#readme",
   "dependencies": {
-    "@babel/cli": "^7.12.1",
-    "@babel/core": "^7.14.3",
-    "@babel/node": "^7.14.2",
-    "@babel/plugin-transform-runtime": "^7.14.3",
-    "@babel/preset-env": "^7.14.4",
-    "@babel/register": "^7.13.16",
     "axios": "^0.21.1",
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
@@ -52,6 +46,12 @@
     "winston-transport": "^4.5.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/register": "^7.13.16",
     "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-node": "^4.1.0",
