@@ -42,12 +42,18 @@
     FRONT_END_BASE_URL=
 ```
 
-- cd in project root folder, create db, install dependencies and run project
+- cd in project root folder, install dependencies, create & seed db and run server
 
   ```
-    - npm install
-    - npm run dev:db-setup
-    - npm run dev:server
+    npm install
+  ```
+
+  ```
+    npm run dev:db-setup
+  ```
+
+  ```
+    npm run dev:server
   ```
 
 - for testing/development purpose the following user is seeded into the db
