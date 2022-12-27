@@ -43,7 +43,11 @@
 ```
 
 - cd in project root folder, install dependencies, create & seed db and run server
-
+ 
+ ```
+    cp .env.example .env 
+  ```
+  
   ```
     npm install
   ```
