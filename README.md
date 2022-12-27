@@ -69,12 +69,12 @@
 
 ### Sample User Journey
 
-    1. User Signup => **POST** _http://localhost:3000/api/auth/register_
-    2. User Confirm Account => **POST** _http://localhost:3000/api/auth/confirm_
-    3. User Create Wallet => **POST** _http://localhost:3000/api/wallet/create_
-    4. User Get Wallets => **GET** _http://localhost:3000/api/wallet/_
-    5. User Create Transaction => **POST** _http://localhost:3000/api/transaction/create_
-    6. Uset Get Transactions => **POST** _http://localhost:3000/api/transaction/_
+    1. User Signup => POST -> http://localhost:3000/api/auth/register
+    2. User Confirm Account => POST -> http://localhost:3000/api/auth/confirm
+    3. User Create Wallet => POST -> http://localhost:3000/api/wallet/create
+    4. User Get Wallets => GET -> http://localhost:3000/api/wallet/
+    5. User Create Transaction => POST -> http://localhost:3000/api/transaction/create
+    6. Uset Get Transactions => POST -> http://localhost:3000/api/transaction/
 
 ## Documentation
 
